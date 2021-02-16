@@ -22,31 +22,8 @@ Before posting to the API, the user's responses will be concatenated with the pr
 
 https://airtable.com/shr94SbP4LAbUtL50
 
-{
-    "records": [
-        {
-            "id": "rec9L2MN0qFI5mjo7",
-            "fields": {
-                "Month Submitted ": "1",
-                "Number of Likes": "11",
-                "Response String": "SAMPLE TEXT BLA BLA"
-            },
-            "createdTime": "2021-02-16T03:03:34.000Z"
-        },
-        {
-            "id": "recxwzn5xnrRamzPX",
-            "fields": {},
-            "createdTime": "2021-02-16T03:03:34.000Z"
-        },
-        {
-            "id": "recc5hHGHDZkHdkEX",
-            "fields": {},
-            "createdTime": "2021-02-16T03:03:34.000Z"
-        }
-    ],
-    "offset": "recc5hHGHDZkHdkEX"
-}
 
+![](https://i.ibb.co/G9PfhQ0/Screen-Shot-2021-02-16-at-11-03-49.png)
 
 #MVP/PostMVP
 
@@ -78,19 +55,19 @@ Feb 21	|Presentations	|incomplete
 
 Component | Priority | Estimated Time | Time Invested | Actual Time
 ------------ | ------------- | ------------- | ------------- | -------------
-Proposal	|	|3hrs	|0hrs	|0hrs
-Airtable setup	|	|	1hrs	|0hrs	|0hrs
-Data population |	|	3hrs|	0hrs	|0hrs
-Date gathering |	|	 3hrs|	0hrs| 0hrs
-General JS writing ||	 3hrs |0hrs |0hrs
-Form creation	|	|	3hrs	|0hrs	|0hrs
-Like button creation ||	 3hrs	|0hrs	|0hrs
-Hall of Fame page creation ||		3hrs|	0hrs	|0hrs
-Links and Routes	|	|3hrs|	0hrs	|0hrs
-Buttons ||	 2hrs| 0hrs|	0hrs
-CSS general style |	|5hrs |	0hrs	|0hrs
-CSS animations||	 2hrs| 0hrs|	0hrs
-Bug testing|	 |2hrs |0hrs	|0hrs
+Proposal	|H	|3hrs	|0hrs	|0hrs
+Airtable setup	|H	|	1hrs	|0hrs	|0hrs
+Data population |H	|	3hrs|	0hrs	|0hrs
+Date gathering |H	|	 3hrs|	0hrs| 0hrs
+General JS writing |H|	 3hrs |0hrs |0hrs
+Form creation	|H	|	3hrs	|0hrs	|0hrs
+Like button creation |M|	 3hrs	|0hrs	|0hrs
+Hall of Fame page creation |M|		3hrs|	0hrs	|0hrs
+Links and Routes	|H	|3hrs|	0hrs	|0hrs
+Buttons |H|	 2hrs| 0hrs|	0hrs
+CSS general style |	H|5hrs |	0hrs	|0hrs
+CSS animations|L|	 2hrs| 0hrs|	0hrs
+Bug testing|L	 |2hrs |0hrs	|0hrs
 Total	||		36hrs|	0hrs|	0hrs
 
 
