@@ -31,33 +31,34 @@ PostMVP
 
 Project Schedule
 Day	Deliverable	Status
+Feb 16	Proposal Approval / Airtable Setup	incomplete
+Feb 17	Component Creation / Get, Set Data	incomplete
+Feb 18	"Hall of Fame" page / CSS Components	incomplete
+Feb 19	CSS Components cont'd / MVP	incomplete
+Feb 20	Advanced CSS	incomplete
+Feb 21	Presentations	incomplete
 
 Timeframes
 Component	Priority	Estimated Time	Time Invested	Actual Time
-Proposal	H	2hrs	2hrs	2hrs
-Airtable setup	H	.5hrs	1hr	1hr
-Clickable icons	H	1hrs	1hr	1hr
-Data population pg 1	H	3hrs	3hrs	3hrs
-Data population pg 2	H	3hrs	2hrs	2hrs
-Data population pg 3	H	3hrs	2hrs	2hrs
-Form creation pg 1	H	2hrs	2hrs	2hrs
-Form creation pg 2	H	2hrs	1 hr	1 hr
-Form creation pg 3	H	2hrs	1 hr	1hr
-Data creation/update pg 1	H	3hrs	3hrs	3hrs
-Data creation/update pg 2	H	3hrs	1hr	1hr
-Data creation/update pg 3	H	3hrs	1hr	1hr
-Data deletion pg 1	H	2hrs	1hr	1hr
-Data deletion pg 2	H	2hrs	1hr	1hr
-Data deletion pg 3	H	2hrs	1hr	1hr
-Component CSS pg 1	H	3hrs	4hrs	4hrs
-Component CSS pg 2	H	3hrs	4hrs	4hrs
-Component CSS pg 3	H	3hrs	4hrs	4hrs
-Total	H	42.5hrs	35hrs	35hrs
+Proposal	H	3hrs	0hrs	0hrs
+Airtable setup	H	1hrs	0hr	0hr
+Data population H	3hrs	0hrs	0hrs
+Date gathering H 3hrs	0hrs 0hrs
+General JS writing H 3hrs 0hrs 0hrs
+Form creation	H	3hrs	0hrs	0hrs
+Like button creation H 3hrs	0hrs	0hrs
+Hall of Fame page creation H	3hrs	0hrs	0hrs
+Links and Routes	H	3hrs	0hrs	0hrs
+Buttons H 2hrs 0hrs	0hrs
+CSS general style 5hrs 	0hrs	0hrs
+CSS animations 2hrs 0hrs	0hr
+Bug testing 2hrs 0hrs	0hrs
+Total	H	36hrs	0hrs	0hrs
 
 
 SWOT Analysis
 Strengths:
-I have a solid idea how I'll structure my items - a primary entry for each month, with arrays to keep track of responses and likes. I believe I can use JS's ability to to get the current date to figure out which prompt to display. This was a tough idea to parse out initially! 
+I have a solid idea how I'll structure my items - a primary API entry for each month, with arrays to keep track of responses and likes. I believe I can use JS's ability to to get the current date to figure out which prompt to display. This was a tough idea to parse out initially! 
 
 Weaknesses:
 React as a whole is still a bit blurry for me - I'm confident I can make this work, but planning it without getting my hands on VSCode is a bit hard to do.
