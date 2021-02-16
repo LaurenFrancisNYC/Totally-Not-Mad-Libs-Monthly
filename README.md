@@ -6,11 +6,15 @@ Totally Not Mad Libs Monthly (TNMLM) is a React and Airtable build that will pre
 
 The wireframes below depict the homepage, entry page, and hall of fame page feed for TNMLM in web and phone format. The homepage contains a header displaying the app title and three clickable icons - add submission, view subbmission for the current month, and view the Hall of Fame- that route to each respective page. 
 
-ADD WIRE FRAMES
+![](https://i.ibb.co/V29sBw0/WF1.png)
+![](https://i.ibb.co/F8kzVyr/WF2.png)
+![](https://i.ibb.co/zVZ6VM0/WF3.png)
+![](https://i.ibb.co/F75rMmW/WF4.png)
+![](https://i.ibb.co/vxJ2qfg/WF5.png)
 
 #Component Hierarchy
 
-ADD THIS TOO
+![](https://i.ibb.co/m6xgBny/map.png)
 
 #API and Data Sample
 
@@ -58,34 +62,39 @@ PostMVP
 - Weekly, rather than monthly prompts.
 - Whiping out the likes and responses after 2021.
 
-Project Schedule
-Day	Deliverable	Status
-Feb 16	Proposal Approval / Airtable Setup	incomplete
-Feb 17	Component Creation / Get, Set Data	incomplete
-Feb 18	"Hall of Fame" page / CSS Components	incomplete
-Feb 19	CSS Components cont'd / MVP	incomplete
-Feb 20	Advanced CSS	incomplete
-Feb 21	Presentations	incomplete
+#Project Schedule
 
-Timeframes
-Component	Priority	Estimated Time	Time Invested	Actual Time
-Proposal	H	3hrs	0hrs	0hrs
-Airtable setup	H	1hrs	0hr	0hr
-Data population H	3hrs	0hrs	0hrs
-Date gathering H 3hrs	0hrs 0hrs
-General JS writing H 3hrs 0hrs 0hrs
-Form creation	H	3hrs	0hrs	0hrs
-Like button creation H 3hrs	0hrs	0hrs
-Hall of Fame page creation H	3hrs	0hrs	0hrs
-Links and Routes	H	3hrs	0hrs	0hrs
-Buttons H 2hrs 0hrs	0hrs
-CSS general style 5hrs 	0hrs	0hrs
-CSS animations 2hrs 0hrs	0hr
-Bug testing 2hrs 0hrs	0hrs
-Total	H	36hrs	0hrs	0hrs
+Day	|Deliverable|	Status
+------------ | ------------- | ------------- 
+Feb 16	|Proposal Approval / Airtable Setup	|incomplete
+Feb 17	|Component Creation / Get, Set Data	|incomplete
+Feb 18	|"Hall of Fame" page / CSS Components	|incomplete
+Feb 19	|CSS Components cont'd / MVP	|incomplete
+Feb 20	|Advanced CSS	|incomplete
+Feb 21	|Presentations	|incomplete
 
 
-SWOT Analysis
+#Timeframes
+
+Component | Priority | Estimated Time | Time Invested | Actual Time
+------------ | ------------- | ------------- | ------------- | -------------
+Proposal	|	|3hrs	|0hrs	|0hrs
+Airtable setup	|	|	1hrs	|0hrs	|0hrs
+Data population |	|	3hrs|	0hrs	|0hrs
+Date gathering |	|	 3hrs|	0hrs| 0hrs
+General JS writing ||	 3hrs |0hrs |0hrs
+Form creation	|	|	3hrs	|0hrs	|0hrs
+Like button creation ||	 3hrs	|0hrs	|0hrs
+Hall of Fame page creation ||		3hrs|	0hrs	|0hrs
+Links and Routes	|	|3hrs|	0hrs	|0hrs
+Buttons ||	 2hrs| 0hrs|	0hrs
+CSS general style |	|5hrs |	0hrs	|0hrs
+CSS animations||	 2hrs| 0hrs|	0hrs
+Bug testing|	 |2hrs |0hrs	|0hrs
+Total	||		36hrs|	0hrs|	0hrs
+
+
+#SWOT Analysis
 Strengths:
 I have a solid idea how I'll structure my items - each API post will have a tag applied based on the month response it is attached to, along with how many likes it has recieved. I believe I can use JS's ability to to get the current date to figure out which prompt to display. This was a tough idea to parse out initially! 
 
