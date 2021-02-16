@@ -4,7 +4,7 @@ Totally Not Mad Libs Monthly (TNMLM) is a React and Airtable build that will pre
 
 #Wire Frames
 
-The wireframes below depict the homepage, entry page, and hall of fame page feed for TNMLM in web and phone format. The homepage contains a header displaying the app title and three clickable icons - add submission, view subbmission for the current month, and view the Hall of Fame- that route to each respective page. The review feeds contain an input form and submit button for review data. Below the form is a feed of all past forms, along with a delete button for each post. The screens will center as screen size decreases.
+The wireframes below depict the homepage, entry page, and hall of fame page feed for TNMLM in web and phone format. The homepage contains a header displaying the app title and three clickable icons - add submission, view subbmission for the current month, and view the Hall of Fame- that route to each respective page. 
 
 ADD WIRE FRAMES
 
