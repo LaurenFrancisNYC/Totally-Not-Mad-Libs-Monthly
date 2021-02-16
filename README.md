@@ -2,7 +2,7 @@
 
 Totally Not Mad Libs Monthly (TNMLM) is a React and Airtable build that will present users with a montly mad lib style prompt, in which they can submit responses that they deem the funniest. They can see the responses of other users, and press a 'like' button on the other responses. There is also a "Hall of Fame" page where the previous prompts can be seen, along with the response that earned the most likes. 
 
-#Wire Frames
+# Wire Frames
 
 The wireframes below depict the homepage, entry page, and hall of fame page feed for TNMLM in web and phone format. The homepage contains a header displaying the app title and three clickable icons - add submission, view subbmission for the current month, and view the Hall of Fame- that route to each respective page. 
 
@@ -12,11 +12,11 @@ The wireframes below depict the homepage, entry page, and hall of fame page feed
 ![](https://i.ibb.co/F75rMmW/WF4.png)
 ![](https://i.ibb.co/vxJ2qfg/WF5.png)
 
-#Component Hierarchy
+# Component Hierarchy
 
 ![](https://i.ibb.co/m6xgBny/map.png)
 
-#API and Data Sample
+# API and Data Sample
 
 Before posting to the API, the user's responses will be concatenated with the prompt and uploaded as a complete string.  
 
@@ -62,7 +62,7 @@ PostMVP
 - Weekly, rather than monthly prompts.
 - Whiping out the likes and responses after 2021.
 
-#Project Schedule
+# Project Schedule
 
 Day	|Deliverable|	Status
 ------------ | ------------- | ------------- 
@@ -74,7 +74,7 @@ Feb 20	|Advanced CSS	|incomplete
 Feb 21	|Presentations	|incomplete
 
 
-#Timeframes
+# Timeframes
 
 Component | Priority | Estimated Time | Time Invested | Actual Time
 ------------ | ------------- | ------------- | ------------- | -------------
@@ -94,7 +94,7 @@ Bug testing|	 |2hrs |0hrs	|0hrs
 Total	||		36hrs|	0hrs|	0hrs
 
 
-#SWOT Analysis
+# SWOT Analysis
 Strengths:
 I have a solid idea how I'll structure my items - each API post will have a tag applied based on the month response it is attached to, along with how many likes it has recieved. I believe I can use JS's ability to to get the current date to figure out which prompt to display. This was a tough idea to parse out initially! 
 
