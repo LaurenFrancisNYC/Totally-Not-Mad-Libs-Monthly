@@ -12,18 +12,23 @@ function Responses(props) {
         localStorage.setItem('favResponses', JSON.stringify([]));
         }}, []);
 
-  const changeLike = async (response,likes,submission,month) => {
-  const localResponses = JSON.parse(localStorage.getItem('favResponses'));
-  if (localResponses.includes(response)) {
+  const changeLike = async (response, likes, submission, month) => {
+    const localResponses = JSON.parse(localStorage.getItem('favResponses'));
+    if (localResponses.includes(response)) {
       localStorage.setItem('favResponses', JSON.stringify(localResponses.filter((localResponse) => localResponse !== response)));
     } else {
       localStorage.setItem('favResponses', JSON.stringify([...localResponses, response]));
     }
     setToggle(!toggle);
 
+    let x = 0
+    if (localResponses.includes(response)) {x=likes-.5} else {x=likes+.5} 
+    
+    console.log(x)
+
     const fields = {
       submission,
-      likes: likes+1,
+      likes: x, 
       month
     };
 
@@ -41,8 +46,6 @@ function Responses(props) {
             {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
           </button>
         </div>))}
-      
-
       <Link to='/'>go back</Link>
     </div>
   )
