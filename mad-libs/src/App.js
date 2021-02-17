@@ -48,7 +48,8 @@ function App() {
           responses={responses}/>
       </Route>
       <Route path='/hall-of-fame'>
-        <HallofFame/>
+        <HallofFame
+          responses={responses}/>
       </Route>
     </div>
   );
