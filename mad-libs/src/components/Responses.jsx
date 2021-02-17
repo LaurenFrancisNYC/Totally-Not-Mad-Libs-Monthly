@@ -24,8 +24,6 @@ function Responses(props) {
     let x = 0
     if (localResponses.includes(response)) {x=likes-.5} else {x=likes+.5} 
     
-    console.log(x)
-
     const fields = {
       submission,
       likes: x, 
@@ -46,7 +44,8 @@ function Responses(props) {
             {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
           </button>
         </div>))}
-      <Link to='/'>go back</Link>
+      <Link to='/'>home</Link>
+      <Link to='/hall-of-fame'>Hall of Fame</Link>
     </div>
   )
 }
