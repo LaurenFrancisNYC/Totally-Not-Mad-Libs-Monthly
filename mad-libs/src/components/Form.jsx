@@ -6,11 +6,10 @@ import { useHistory } from "react-router-dom";
 
 
 function Form(props) {
-  const [submission, setSubmission] = useState("");
+  // const [submission, setSubmission] = useState("");
   const [field1, setField1] = useState("");
   const [field2, setField2] = useState("");
-  const [likes, setLikes] = useState('0');
-  const [month, setMonth] = useState('');
+  const [likes, setLikes] = useState(0);
   const history = useHistory();
 
   const handleSubmit = async (e) => {
@@ -21,23 +20,18 @@ function Form(props) {
       const subStringField2 = subString.replace('____', `${field2}`)
       return subStringField2
     } 
-    setSubmission(createString())
-    //gets the current month and sets it to string to avoid 422 errors 
-    const getMonth = () => {
-      setMonth(props.currentMonth.toString())
-    }
-    getMonth()
+    const submission = createString()
 
     const fields = {
       submission,
       likes,
-      month
+      month: props.currentMonth
     };
 
     await axios.post(baseURL, { fields }, config)
     
     console.log(fields)
-    history.push("/");
+    // history.push("/");
 
   }
     return (

@@ -7,25 +7,29 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import { baseURL, config } from "./services";
 
+
 function App() {
-  const [currentMonth, setCurrentMonth] = useState(1);
-  const [currentPrompt, setCurrentPrompt] = useState(prompts[currentMonth].text);
+  const [currentMonth, setCurrentMonth] = useState(0);
+  const [currentPrompt, setCurrentPrompt] = useState();
+  const [responses, setResponses] = useState([])
   
+  useEffect(() => {
+  const getResponses = async () => {
+      const resp = await axios.get(baseURL, config);
+      setResponses(resp.data.records);
+    };
+    getResponses();
+  }, []);
+
+
   // Gets the current date and sets it as the current month
-  // useEffect(() => {
-  //   const date = new Date(); 
-  //   const month = date.getMonth();
-  //   const setMonth = () => setCurrentMonth(month);     
-  //   setMonth();
-  // }, []);
+  useEffect(() => {
+    const date = new Date(); 
+    const month = date.getMonth();
+    setCurrentMonth(month);   
+    setCurrentPrompt(prompts[month].text)
+  }, []);
   
-    // Gets the current month and sets the appropriate prompt from the prompts.js file 
-  // useEffect(() => {
-  //   const getPrompt = () => {
-  //     setCurrentPrompt(prompts[currentMonth].text)
-  //   }
-  //   getPrompt()
-  // }, []);
 
   return (
     <div className="App">
@@ -38,7 +42,8 @@ function App() {
           currentMonth={currentMonth} />
       </Route>
       <Route path='/responses'>
-          <Responses/>
+        <Responses
+          responses={responses}/>
       </Route>
     </div>
   );
@@ -48,10 +53,3 @@ export default App;
 
 
 
-  // const [responses,setResponses] = useState()
-  // const getResponses = async () => {
-  //   const resp = await axios.get(baseURL, config);
-  //   setResponses(resp.data.records);
-  // };
-  // getResponses();
-  // console.log(responses)
