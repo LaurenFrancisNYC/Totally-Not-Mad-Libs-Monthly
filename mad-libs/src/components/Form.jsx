@@ -20,15 +20,16 @@ function Form(props) {
     } 
     const submission = createString()
 
+    //This creates the api post frields 
     const fields = {
       submission,
       likes,
       month: props.currentMonth
     };
-
+    //post tto the api
     await axios.post(baseURL, { fields }, config)
-    
-    console.log(fields)
+    // console.log(fields)
+    //returns to the homepage
     history.push("/");
 
   }

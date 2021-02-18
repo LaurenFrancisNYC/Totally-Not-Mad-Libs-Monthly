@@ -7,11 +7,13 @@ import { baseURL, config } from "../services";
 function Responses(props) {
   const [toggle, setToggle] = useState(false);
 
+  //opens local storage arrays
   useEffect(() => {
     if (!localStorage.getItem('favResponses')) {
         localStorage.setItem('favResponses', JSON.stringify([]));
         }}, []);
 
+  //controls the like button toggles
   const changeLike = async (response, likes, submission, month) => {
     const localResponses = JSON.parse(localStorage.getItem('favResponses'));
     if (localResponses.includes(response)) {
@@ -21,25 +23,26 @@ function Responses(props) {
     }
     setToggle(!toggle);
 
+    //sets the rules for the adjustments on the like counts 
     let x = 0
     if (localResponses.includes(response)) {x=likes-0} else {x=likes+.5} 
-    
     const fields = {
       submission,
       likes: x, 
       month
     };
 
+  //makes the api put requests to adjust the number of likes
     const responseURL = `${baseURL}`+'/'+response
     console.log(responseURL)
     await axios.put(responseURL, { fields }, config);
   }
 
+  //makes sure only the current month's responses are shown
   const currentMonthResponses = props.responses.filter(function(response){
     return response.fields.month == props.currentMonth})
 
-  console.log(currentMonthResponses)
-
+  // console.log(currentMonthResponses)
   return (
     <div>
       {currentMonthResponses.map((response) => (

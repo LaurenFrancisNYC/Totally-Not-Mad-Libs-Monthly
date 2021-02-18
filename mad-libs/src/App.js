@@ -14,6 +14,7 @@ function App() {
   const [currentPrompt, setCurrentPrompt] = useState();
   const [responses, setResponses] = useState([])
   
+  // The primary api call 
   useEffect(() => {
   const getResponses = async () => {
       const resp = await axios.get(baseURL, config);

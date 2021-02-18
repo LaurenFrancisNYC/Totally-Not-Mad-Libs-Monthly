@@ -2,8 +2,9 @@
 import { useState } from "react";
 
 function MonthSelection(props) {
-  const [monthSelectionTemp,setMonthSelectionTemp] = useState(0)
-
+  const [monthSelectionTemp, setMonthSelectionTemp] = useState(0)
+  
+//this component lets the user select which of the other months they'd like to see the top post of 
   const handleSubmit = (e) => {
     e.preventDefault();
     const monthSelectionTempInt = parseInt(monthSelectionTemp)
