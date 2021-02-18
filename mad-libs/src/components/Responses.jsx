@@ -22,7 +22,7 @@ function Responses(props) {
     setToggle(!toggle);
 
     let x = 0
-    if (localResponses.includes(response)) {x=likes-.5} else {x=likes+.5} 
+    if (localResponses.includes(response)) {x=likes-0} else {x=likes+.5} 
     
     const fields = {
       submission,
@@ -35,9 +35,14 @@ function Responses(props) {
     await axios.put(responseURL, { fields }, config);
   }
 
+  const currentMonthResponses = props.responses.filter(function(response){
+    return response.fields.month == props.currentMonth})
+
+  console.log(currentMonthResponses)
+
   return (
     <div>
-      {props.responses.map((response) => (
+      {currentMonthResponses.map((response) => (
         <div id={response.id} key={response.id}>
           <h4>{`${response.fields.submission}`}</h4>
           <button onClick={() => changeLike(response.id,response.fields.likes,response.fields.submission,response.fields.month)}>

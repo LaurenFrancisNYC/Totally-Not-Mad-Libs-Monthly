@@ -12,7 +12,7 @@ function TopSubmission(props) {
     return a.fields.likes - b.fields.likes;}) 
   const topResponseIndex = monthlyResponses.length-1
   const topArray = monthlyResponses[topResponseIndex]
-  const topResponse = topArray.fields.submission  
+  const topResponse = topArray.fields.submission   
   props.setTopSelection(topResponse) 
   }, [toggleFetch]);
 

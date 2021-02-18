@@ -42,7 +42,8 @@ function App() {
       </Route>
       <Route path='/responses'>
         <Responses
-          responses={responses}/>
+          responses={responses}
+          currentMonth={currentMonth}/>
       </Route>
       <Route path='/hall-of-fame'>
         <HallofFame
