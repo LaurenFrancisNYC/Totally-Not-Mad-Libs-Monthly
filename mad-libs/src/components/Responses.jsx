@@ -2,7 +2,7 @@ import { Link, Route } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from "react";
 import { baseURL, config } from "../services";
-
+import prompts from "../prompts";
 
 function Responses(props) {
   const [toggle, setToggle] = useState(false);
@@ -44,9 +44,10 @@ function Responses(props) {
 
   // console.log(currentMonthResponses)
   return (
-    <div>
+    <div id='responsesComp'>
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
+      <h1>{prompts[props.currentMonth].text}</h1>
       {currentMonthResponses.map((response) => (
         <div id={response.id} key={response.id}>
           <h4>{`${response.fields.submission}`}</h4>
@@ -54,8 +55,8 @@ function Responses(props) {
             {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
           </button>
         </div>))}
-      <Link class='buttons' to='/'>Go Home</Link>
-      <Link class='buttons' to='/hall-of-fame'>Hall of Fame</Link>
+      <Link className='buttons' to='/'>Go Home</Link>
+      <Link className='buttons' to='/hall-of-fame'>Hall of Fame</Link>
     </div>
   )
 }

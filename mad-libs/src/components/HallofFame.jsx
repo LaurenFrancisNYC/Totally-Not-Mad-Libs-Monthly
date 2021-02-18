@@ -27,7 +27,7 @@ function HallofFame(props) {
         toggleFetch={toggleFetch}
         setTopSelection={setTopSelection}
         topSelection={topSelection} />
-      <Link class='buttons' to='/'>Go Home</Link>
+      <Link className='buttons' to='/'>Go Home</Link>
     </div>
   )
 }

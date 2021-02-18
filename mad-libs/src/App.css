@@ -1,12 +1,12 @@
 .App {
   text-align: center;
   color: #fff9eb;
-  font-family: 'Alice', serif;
+  font-family: "Alice", serif;
 }
 
-.buttons{
-  color:#fff9eb;
-  background-color: #19197b;;
+.buttons {
+  color: #fff9eb;
+  background-color: #19197b;
   border-radius: 10px;
   border-style: solid;
   border-color: #fff9eb;
@@ -14,18 +14,72 @@
   text-decoration: none;
   padding: 10px;
   margin: 10px 10px 10px 10px;
-  transition: .5s;
+  transition: 0.5s;
+}
+
+#monthlyPromptComp {
+  display: grid;
+  grid-template-rows: 100px 10px 100px;
+  justify-items: center;
+  align-items: center;
 }
 
 .buttons:hover {
   color: #19197b;
   background-color: #fff9eb;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-#monthlyPromptComp{
-  margin-top: 50%;
-  /* display: flex; */
+.nav{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+#responsesComp {
+  display: grid;
+  grid-template-rows: 100px 10px 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+#formComp {
+  display: grid;
+  grid-template-rows: 100px 10px 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+#formFields{
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.textField{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 2px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+#submitbutton{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 2px;
+  color: #fff9eb;
+  background-color: #19197b;
+  font-family: "Alice", serif;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+#submitbutton:hover {
+  color: #19197b;
+  background-color: #fff9eb;
+  transition: 0.5s;
 }
 
 /* 

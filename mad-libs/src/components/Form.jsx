@@ -34,29 +34,33 @@ function Form(props) {
 
   }
     return (
-      <div>
+      <div id='formComp'>
         <h2>Welcome to Totally Not Mad Libs Monthly</h2>
         <h2>This month's prompt is as follows:</h2>
         <h1>{props.currentPrompt}</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="field1"></label>
-          <input
-            id="field1"
-            type="text"
-            value={field1}
-            onChange={(e) => setField1(e.target.value)}
-          />
-          <label htmlFor="field2"></label>
-          <input
-            id="field2"
-            type="text"
-            value={field2}
-            onChange={(e) => setField2(e.target.value)}
-          />
-          <button id="submitbutton" type="submit">Submit!</button>
-        </form>
-        <Link class='buttons' to='/'>Go Home</Link>
-        <Link class='buttons' to='/hall-of-fame'>Hall of Fame</Link>
+          <form id='formFields' onSubmit={handleSubmit}>
+            {/* <label htmlFor="field1"></label> */}
+            <input
+              id="field1"
+              className='textField'
+              type="text"
+              value={field1}
+              onChange={(e) => setField1(e.target.value)}
+            />
+            {/* <label htmlFor="field2"></label> */}
+            <input
+              id="field2"
+              className='textField'
+              type="text"
+              value={field2}
+              onChange={(e) => setField2(e.target.value)}
+            />
+            <button id="submitbutton" type="submit">Submit</button>
+          </form>
+        <div className='nav'>
+          <Link className='buttons' to='/'>Go Home</Link>
+          <Link className='buttons' to='/hall-of-fame'>Hall of Fame</Link>
+        </div>
       </div>
     )
 }
