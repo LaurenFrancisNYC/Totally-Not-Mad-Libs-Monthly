@@ -11,8 +11,17 @@ function HallofFame(props) {
 
   return (
     <div>
-      <MonthSelection setMonthSelection={setMonthSelection} monthSelection={monthSelection} setToggleFetch={setToggleFetch}/>
-      <TopSubmission monthSelection={monthSelection} responses={responses} toggleFetch={toggleFetch} setTopSelection={setTopSelection} topSelection={topSelection}/>
+      <MonthSelection
+        setMonthSelection={setMonthSelection}
+        monthSelection={monthSelection}
+        setToggleFetch={setToggleFetch}
+        toggleFetch={toggleFetch} />
+      <TopSubmission
+        monthSelection={monthSelection}
+        responses={responses}
+        toggleFetch={toggleFetch}
+        setTopSelection={setTopSelection}
+        topSelection={topSelection} />
       <Link to='/'>home</Link>
     </div>
   )
