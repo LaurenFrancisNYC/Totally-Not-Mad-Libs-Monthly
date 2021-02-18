@@ -19,7 +19,15 @@ useEffect(() => {
     return a.fields.likes - b.fields.likes;
   })
   
-  console.log(sorted)
+  const topResponseIndex = monthlyResponses.length-1
+
+  console.log(monthlyResponses)
+
+  console.log(monthlyResponses[topResponseIndex])
+  const test = monthlyResponses[topResponseIndex]
+  console.log(test.id)
+
+
 
 
 
