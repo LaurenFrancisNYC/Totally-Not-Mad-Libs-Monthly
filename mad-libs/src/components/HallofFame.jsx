@@ -5,41 +5,14 @@ import { useState, useEffect } from "react";
 
 function HallofFame(props) {
   const [monthSelection, setMonthSelection] = useState(0)
-  const [topSelection,setTopSelection] = useState('')
-
-useEffect(() => {
-  // console.log(monthSelection)
+  const [topSelection, setTopSelection] = useState('')
+  const [toggleFetch, setToggleFetch] = useState(false);
   const responses = props.responses 
-  // console.log(responses)
-  const monthlyResponses = responses.filter(function(response){
-    return response.fields.month == monthSelection
-  })
-
-  const sorted = monthlyResponses.sort((a, b) => {
-    return a.fields.likes - b.fields.likes;
-  })
-  
-  const topResponseIndex = monthlyResponses.length-1
-
-  console.log(monthlyResponses)
-
-  console.log(monthlyResponses[topResponseIndex])
-  const test = monthlyResponses[topResponseIndex]
-  console.log(test.id)
-
-
-
-
-
-
-
-  }, [monthSelection]);
-  
 
   return (
     <div>
-      <MonthSelection setMonthSelection={setMonthSelection} MonthSelection={MonthSelection}/>
-      <TopSubmission MonthSelection={MonthSelection} />
+      <MonthSelection setMonthSelection={setMonthSelection} monthSelection={monthSelection} setToggleFetch={setToggleFetch}/>
+      <TopSubmission monthSelection={monthSelection} responses={responses} toggleFetch={toggleFetch} setTopSelection={setTopSelection} topSelection={topSelection}/>
       <Link to='/'>home</Link>
     </div>
   )

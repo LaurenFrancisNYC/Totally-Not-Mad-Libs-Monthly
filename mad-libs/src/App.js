@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import { baseURL, config } from "./services";
 
-
 function App() {
   const [currentMonth, setCurrentMonth] = useState(0);
   const [currentPrompt, setCurrentPrompt] = useState();
@@ -23,7 +22,6 @@ function App() {
     getResponses();
   }, []);
 
-
   // Gets the current date and sets it as the current month
   useEffect(() => {
     const date = new Date(); 
@@ -32,7 +30,6 @@ function App() {
     setCurrentPrompt(prompts[month].text)
   }, []);
   
-
   return (
     <div className="App">
       <Route exact path='/'>

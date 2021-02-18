@@ -5,7 +5,7 @@ const prompts = [
   },
   {
     month: 1,
-    text: "testing ____ and ____. 1"
+    text: "My cat is best known for ____ and ____."
   },
   {
     month: 2,

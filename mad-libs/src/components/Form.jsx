@@ -4,9 +4,7 @@ import axios from 'axios';
 import { baseURL, config } from "../services";
 import { useHistory } from "react-router-dom";
 
-
 function Form(props) {
-  // const [submission, setSubmission] = useState("");
   const [field1, setField1] = useState("");
   const [field2, setField2] = useState("");
   const [likes, setLikes] = useState(0);
@@ -31,7 +29,7 @@ function Form(props) {
     await axios.post(baseURL, { fields }, config)
     
     console.log(fields)
-    // history.push("/");
+    history.push("/");
 
   }
     return (
