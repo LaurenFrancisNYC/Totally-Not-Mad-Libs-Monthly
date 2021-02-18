@@ -35,6 +35,8 @@ function Form(props) {
   }
     return (
       <div>
+        <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+        <h2>This month's prompt is as follows:</h2>
         <h1>{props.currentPrompt}</h1>
         <form onSubmit={handleSubmit}>
           <label htmlFor="field1"></label>
@@ -53,7 +55,7 @@ function Form(props) {
           />
           <button id="submitbutton" type="submit">Submit!</button>
         </form>
-        <Link to='/'>home</Link>
+        <Link to='/'>Go Home</Link>
         <Link to='/hall-of-fame'>Hall of Fame</Link>
       </div>
     )

@@ -45,6 +45,8 @@ function Responses(props) {
   // console.log(currentMonthResponses)
   return (
     <div>
+      <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+      <h2>This month's prompt is as follows:</h2>
       {currentMonthResponses.map((response) => (
         <div id={response.id} key={response.id}>
           <h4>{`${response.fields.submission}`}</h4>
@@ -52,7 +54,7 @@ function Responses(props) {
             {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
           </button>
         </div>))}
-      <Link to='/'>home</Link>
+      <Link to='/'>Go Home</Link>
       <Link to='/hall-of-fame'>Hall of Fame</Link>
     </div>
   )

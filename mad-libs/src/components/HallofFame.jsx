@@ -2,6 +2,7 @@ import { Link, Route } from "react-router-dom";
 import MonthSelection from "../components/MonthSelection"
 import TopSubmission from "../components/TopSubmission"
 import { useState, useEffect } from "react";
+import prompts from "../prompts";
 
 function HallofFame(props) {
   const [monthSelection, setMonthSelection] = useState(0)
@@ -11,6 +12,10 @@ function HallofFame(props) {
 
   return (
     <div>
+      <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+      <h3>Select a month to see the most liked submission.</h3>
+      <h3>The prompt for January was:</h3>
+      <h2>{prompts[monthSelection].text}</h2>
       <MonthSelection
         setMonthSelection={setMonthSelection}
         monthSelection={monthSelection}
@@ -22,7 +27,7 @@ function HallofFame(props) {
         toggleFetch={toggleFetch}
         setTopSelection={setTopSelection}
         topSelection={topSelection} />
-      <Link to='/'>home</Link>
+      <Link to='/'>Go Home</Link>
     </div>
   )
 }
