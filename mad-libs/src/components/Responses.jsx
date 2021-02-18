@@ -54,8 +54,8 @@ function Responses(props) {
             {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
           </button>
         </div>))}
-      <Link to='/'>Go Home</Link>
-      <Link to='/hall-of-fame'>Hall of Fame</Link>
+      <Link class='buttons' to='/'>Go Home</Link>
+      <Link class='buttons' to='/hall-of-fame'>Hall of Fame</Link>
     </div>
   )
 }

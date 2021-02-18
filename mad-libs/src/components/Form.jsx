@@ -55,8 +55,8 @@ function Form(props) {
           />
           <button id="submitbutton" type="submit">Submit!</button>
         </form>
-        <Link to='/'>Go Home</Link>
-        <Link to='/hall-of-fame'>Hall of Fame</Link>
+        <Link class='buttons' to='/'>Go Home</Link>
+        <Link class='buttons' to='/hall-of-fame'>Hall of Fame</Link>
       </div>
     )
 }
