@@ -48,13 +48,15 @@ function Responses(props) {
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
       <h1>{prompts[props.currentMonth].text}</h1>
-      {currentMonthResponses.map((response) => (
-        <div id={response.id} key={response.id}>
-          <h4>{`${response.fields.submission}`}</h4>
-          <button onClick={() => changeLike(response.id,response.fields.likes,response.fields.submission,response.fields.month)}>
-            {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
-          </button>
-        </div>))}
+      <div id='responsesContainer'>
+        {currentMonthResponses.map((response) => (
+          <div className='responses' id={response.id} key={response.id}>
+            <h4 >{`${response.fields.submission}`}</h4>
+            <button className='likeButtons' onClick={() => changeLike(response.id,response.fields.likes,response.fields.submission,response.fields.month)}>
+              {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? 'Unlike 💔' : 'Like ❤️'}
+            </button>
+          </div>))}
+      </div>  
       <Link className='buttons' to='/'>Go Home</Link>
       <Link className='buttons' to='/hall-of-fame'>Hall of Fame</Link>
     </div>

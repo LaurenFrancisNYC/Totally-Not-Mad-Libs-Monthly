@@ -13,15 +13,8 @@
   border-width: 2px;
   text-decoration: none;
   padding: 10px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   transition: 0.5s;
-}
-
-#monthlyPromptComp {
-  display: grid;
-  grid-template-rows: 100px 10px 100px;
-  justify-items: center;
-  align-items: center;
 }
 
 .buttons:hover {
@@ -30,21 +23,63 @@
   transition: 0.5s;
 }
 
+.likeButtons {
+  color: #fff9eb;
+  background-color: #19197b;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 1px;
+  text-decoration: none;
+  /* padding: 10px; */
+  /* margin: 0px 10px 10px 10px; */
+  transition: 0.5s;
+}
+
+.likeButtons:hover {
+  color: #19197b;
+  background-color: #fff9eb;
+  transition: 0.5s;
+}
+
+.responses{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 2px;
+}
+
 .nav{
   display:flex;
   justify-content: space-evenly;
 }
 
-#responsesComp {
+#monthlyPromptComp {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: grid;
-  grid-template-rows: 100px 10px 100px;
+  grid-template-rows: 90px 10px 100px;
   justify-items: center;
   align-items: center;
 }
 
 #formComp {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: grid;
-  grid-template-rows: 100px 10px 100px;
+  grid-template-rows: 90px 10px 100px 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+#responsesComp {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-rows: 90px 10px 100px;
   justify-items: center;
   align-items: center;
 }
@@ -52,7 +87,7 @@
 #formFields{
   display: flex;
   justify-content: space-evenly;
-  width: 500px;
+  width: 450px;
 }
 
 .textField{
