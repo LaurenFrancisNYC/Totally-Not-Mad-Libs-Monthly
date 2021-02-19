@@ -1,7 +1,7 @@
 const prompts = [
   {
     month: 0,
-    text: "testing ____ and ____. 0"
+    text: "The first celebrity death of the year is ____, who died of ____."
   },
   {
     month: 1,
