@@ -158,3 +158,16 @@
 #respPageNav{
   display:flex
 }
+
+#hallOfFameComp{
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-rows: 90px 50px 30px 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+#monthSelection{
+}

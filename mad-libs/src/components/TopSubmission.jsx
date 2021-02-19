@@ -26,7 +26,8 @@ function TopSubmission(props) {
 
   return (
     <div>
-      <p>{props.topSelection}</p>
+      
+      <h1>{props.topSelection}</h1>
     </div>
   )
 }
