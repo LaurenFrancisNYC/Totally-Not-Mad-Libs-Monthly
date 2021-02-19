@@ -24,18 +24,23 @@ function Responses(props) {
     setToggle(!toggle);
 
     //sets the rules for the adjustments on the like counts 
-    let x = 0
-    if (localResponses.includes(response)) {x=likes-0} else {x=likes+.5} 
+    // let x = 0
+    // if (localResponses.includes(response)) { x = likes - 0 } else { x = likes + .5 } 
+    
+    // let x = 0
+    const newLikes = localResponses.includes(response) ? likes-0 : likes+.5
+    
     const fields = {
       submission,
-      likes: x, 
+      likes: newLikes, 
       month
     };
 
   //makes the api put requests to adjust the number of likes
-    const responseURL = `${baseURL}`+'/'+response
-    console.log(responseURL)
-    await axios.put(responseURL, { fields }, config);
+    const responseUrl = `${baseURL}/${response}`
+    // const responseURL = `${baseURL}`+'/'+response
+    // console.log(responseUrl)
+    await axios.put(responseUrl, { fields }, config);
   }
 
   //makes sure only the current month's responses are shown
