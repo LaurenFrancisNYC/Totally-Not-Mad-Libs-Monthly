@@ -13,8 +13,8 @@ function MonthSelection(props) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} id='monthSelection'>
+    <div id='monthSelection'>
+      <form onSubmit={handleSubmit}>
       {/* <label>Month:</label> */}
         <select id="months" name="months" onChange={(e) => setMonthSelectionTemp(e.target.value)}>
           <option value='0'>January</option>
@@ -30,7 +30,7 @@ function MonthSelection(props) {
           <option value="10">November</option>
           <option value="11">December</option>
         </select>
-        <input type="submit"></input>
+        <input className="submitButton" id='monthSubmit' type="submit"></input>
       </form>
     </div>
   )

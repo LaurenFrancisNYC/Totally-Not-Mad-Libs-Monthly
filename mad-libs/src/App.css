@@ -33,7 +33,7 @@
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
-  grid-template-rows: 90px 10px 100px;
+  grid-template-rows: 90px 20px 100px;
   justify-items: center;
   align-items: center;
 }
@@ -43,7 +43,7 @@
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
-  grid-template-rows: 90px 10px 100px 100px;
+  grid-template-rows: 90px 20px 100px 100px;
   justify-items: center;
   align-items: center;
 }
@@ -63,7 +63,7 @@
   transition: 0.5s;
 }
 
-#submitbutton{
+.submitButton{
   border-radius: 10px;
   border-style: solid;
   border-color: #fff9eb;
@@ -75,7 +75,7 @@
   transition: 0.5s;
 }
 
-#submitbutton:hover {
+.submitButton:hover {
   color: #19197b;
   background-color: #fff9eb;
   transition: 0.5s;
@@ -86,7 +86,7 @@
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
-  grid-template-rows: 90px 10px 100px;
+  grid-template-rows: 90px 20px 100px;
   justify-items: center;
   align-items: center;
 }
@@ -164,10 +164,29 @@
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
-  grid-template-rows: 90px 50px 30px 30px;
+  grid-template-rows: 90px 50px 70px 30px;
   justify-items: center;
   align-items: center;
 }
 
 #monthSelection{
+  /* margin: 100px; */
+  /* width: 400px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+#months{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 1px;
+  padding: 10px;
+  font-family: "Alice", serif;
+  color: #19197b;
+  margin-right: 5px;
+}
+
+#monthSubmit{
+  margin-left: 5px;
 }

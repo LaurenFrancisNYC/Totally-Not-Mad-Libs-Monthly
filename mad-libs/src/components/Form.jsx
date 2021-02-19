@@ -55,7 +55,7 @@ function Form(props) {
               value={field2}
               onChange={(e) => setField2(e.target.value)}
             />
-            <button id="submitbutton" type="submit">Submit</button>
+            <button className="submitButton" type="submit">Submit</button>
           </form>
         <div className='nav'>
           <Link className='buttons' to='/'>Go Home</Link>
