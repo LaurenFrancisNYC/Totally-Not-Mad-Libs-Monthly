@@ -140,6 +140,7 @@
   border-style: solid;
   border-color: #fff9eb;
   border-width: 1px; */
+  border: none;
   justify-self: right;
   /* text-align: right; */
 
@@ -152,4 +153,8 @@
   color: #19197b;
   background-color: #fff9eb;
   transition: 0.5s;
+}
+
+#respPageNav{
+  display:flex
 }

@@ -57,8 +57,10 @@ function Responses(props) {
             </button>
           </div>))}
       </div>  
-      <Link className='buttons' to='/'>Go Home</Link>
-      <Link className='buttons' to='/hall-of-fame'>Hall of Fame</Link>
+      <div id='respPageNav'>
+        <Link className='buttons' to='/'>Go Home</Link>
+        <Link className='buttons' to='/hall-of-fame'>Hall of Fame</Link>
+      </div>    
     </div>
   )
 }
