@@ -23,32 +23,6 @@
   transition: 0.5s;
 }
 
-.likeButtons {
-  color: #fff9eb;
-  background-color: #19197b;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #fff9eb;
-  border-width: 1px;
-  text-decoration: none;
-  /* padding: 10px; */
-  /* margin: 0px 10px 10px 10px; */
-  transition: 0.5s;
-}
-
-.likeButtons:hover {
-  color: #19197b;
-  background-color: #fff9eb;
-  transition: 0.5s;
-}
-
-.responses{
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #fff9eb;
-  border-width: 2px;
-}
-
 .nav{
   display:flex;
   justify-content: space-evenly;
@@ -70,16 +44,6 @@
   margin-right: 10px;
   display: grid;
   grid-template-rows: 90px 10px 100px 100px;
-  justify-items: center;
-  align-items: center;
-}
-
-#responsesComp {
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: grid;
-  grid-template-rows: 90px 10px 100px;
   justify-items: center;
   align-items: center;
 }
@@ -117,27 +81,69 @@
   transition: 0.5s;
 }
 
-/* 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#responsesComp {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-rows: 90px 10px 100px;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-/* 
-.App-link {
-  color: #61dafb;
-} */
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+}
+
+#responsesContainer{
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.responses{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 1px;
+  /* max-width: 200px; */
+  margin: 5px;
+  padding: 10px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas:
+    "c c c l"
+    "c c c l"
+    "c c c l";
+  /* justify-content: left; */
+  text-align: left;
+  background-color: rgb(36, 38, 92);
+}
+
+.responseText{
+  grid-area: c;
+  margin: 1px;
+  justify-self: left;
+
+}
+
+.likeButtons {
+  grid-area: l;
+  height: 32px;
+  width: 32px;
+  color: #fff9eb;
+  background-color: #19197b;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff9eb;
+  border-width: 1px;
+  justify-self: right;
+  /* text-align: right; */
+
+  /* text-decoration: none; */
+  /* margin: 15px 15px 15px 15px; */
+  transition: 0.5s;
+}
+
+.likeButtons:hover {
+  color: #19197b;
+  background-color: #fff9eb;
+  transition: 0.5s;
+}

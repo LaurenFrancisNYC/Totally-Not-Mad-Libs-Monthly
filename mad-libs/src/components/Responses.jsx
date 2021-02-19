@@ -51,9 +51,9 @@ function Responses(props) {
       <div id='responsesContainer'>
         {currentMonthResponses.map((response) => (
           <div className='responses' id={response.id} key={response.id}>
-            <h4 >{`${response.fields.submission}`}</h4>
+            <h5 className='responseText'> {`${response.fields.submission}`}</h5> 
             <button className='likeButtons' onClick={() => changeLike(response.id,response.fields.likes,response.fields.submission,response.fields.month)}>
-              {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? 'Unlike 💔' : 'Like ❤️'}
+              {localStorage.getItem('favResponses') && JSON.parse(localStorage.getItem('favResponses')).includes(response.id) ? '💔' : '❤️'}
             </button>
           </div>))}
       </div>  
