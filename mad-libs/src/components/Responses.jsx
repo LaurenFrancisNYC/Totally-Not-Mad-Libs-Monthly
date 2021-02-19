@@ -52,7 +52,7 @@ function Responses(props) {
     <div id='responsesComp'>
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
-      <h1>{prompts[props.currentMonth].text}</h1>
+      <h3 className='largeText'>{prompts[props.currentMonth].text}</h3>
       <div id='responsesContainer'>
         {currentMonthResponses.map((response) => (
           <div className='responses' id={response.id} key={response.id}>

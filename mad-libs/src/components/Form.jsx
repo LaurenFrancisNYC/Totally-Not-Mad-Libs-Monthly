@@ -31,7 +31,7 @@ function Form(props) {
     <div id="formComp">
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
-      <h1>{props.currentPrompt}</h1>
+      <h3 className='largeText'>{props.currentPrompt}</h3>
       <form id="formFields" onSubmit={handleSubmit}>
         {/* <label htmlFor="field1"></label> */}
         <input

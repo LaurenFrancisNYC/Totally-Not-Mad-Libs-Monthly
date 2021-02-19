@@ -20,7 +20,7 @@ function HallofFame(props) {
         setToggleFetch={setToggleFetch}
         toggleFetch={toggleFetch} />
       <h3>The prompt for this month was:</h3>
-      <h2>{prompts[monthSelection].text}</h2>
+      <h3 className='largeText'>{prompts[monthSelection].text}</h3>
       
       <TopSubmission
         monthSelection={monthSelection}

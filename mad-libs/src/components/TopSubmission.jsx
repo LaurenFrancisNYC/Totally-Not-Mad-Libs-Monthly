@@ -8,13 +8,25 @@ function TopSubmission(props) {
   const toggleFetch = props.toggleFetch
 
   useEffect(() => {
-    const monthlyResponses = responses.filter(function (response) {
-      return response.fields.month == monthSelection
-    })
     //sorts by most likes
-    const sorted = monthlyResponses.sort((a, b) => {
+    const monthlyResponses = responses.filter(function(response){
+      return response.fields.month === monthSelection
+    }).sort((a, b) => {
       return a.fields.likes - b.fields.likes;
-    })
+    }) 
+
+      // console.log(typeof(responses.fields.month))
+      // console.log(typeof(monthSelection))
+
+    // const monthlyResponses = responses.filter(function (response) {
+    //   return response.fields.month == monthSelection
+    //   console.log(typeof (response.fields.month))
+    //   console.log(typeof(monthSelection))
+    // })
+    //sorts by most likes
+    //   const sorted = monthlyResponses.sort((a, b) => {
+    //   return a.fields.likes - b.fields.likes;
+    // })
     
     //gets the most liked entry
     const topResponseIndex = monthlyResponses.length - 1
@@ -27,7 +39,7 @@ function TopSubmission(props) {
   if (responses != null) {
     return (
       <div>
-        <h1>{props.topSelection}</h1>
+        <h3 className='largeText'>{props.topSelection}</h3>
       </div>
     )
   }
