@@ -8,7 +8,7 @@ function MonthSelection(props) {
     e.preventDefault();
     const monthSelectionTempInt = parseInt(monthSelectionTemp);
     props.setMonthSelection(monthSelectionTempInt);
-    props.setToggleFetch((curr) => !curr);
+    props.setToggle((curr) => !curr);
   };
 
   const monthsArray = [
