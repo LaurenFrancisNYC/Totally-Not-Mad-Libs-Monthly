@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { baseURL, config } from "../services";
 import prompts from "../prompts";
+import Fade from "../fade";
 
 function Responses(props) {
   const toggle = props.toggle;
   const setToggle = props.setToggle;
+  const [show, setShow] = useState(false);
+
+  //loads up fade effects
+  useEffect(() => {
+    setShow((show) => !show);
+  }, []);
 
   //opens local storage arrays
   useEffect(() => {
@@ -58,39 +65,46 @@ function Responses(props) {
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
       <h3 className="largeText">{prompts[props.currentMonth].text}</h3>
-      <div id="responsesContainer">
-        {currentMonthResponses.map((response) => (
-          <div className="responses" id={response.id} key={response.id}>
-            <h5 className="responseText"> {`${response.fields.submission}`}</h5>
-            <button
-              className="likeButtons"
-              onClick={() =>
-                changeLike(
-                  response.id,
-                  response.fields.likes,
-                  response.fields.submission,
-                  response.fields.month
+      <Fade show={show}>
+        <div id="responsesContainer">
+          {currentMonthResponses.map((response) => (
+            <div className="responses" id={response.id} key={response.id}>
+              <h5 className="responseText">
+                {" "}
+                {`${response.fields.submission}`}
+              </h5>
+              <button
+                className="likeButtons"
+                onClick={() =>
+                  changeLike(
+                    response.id,
+                    response.fields.likes,
+                    response.fields.submission,
+                    response.fields.month
+                  )
+                }
+              >
+                {localStorage.getItem("favResponses") &&
+                JSON.parse(localStorage.getItem("favResponses")).includes(
+                  response.id
                 )
-              }
-            >
-              {localStorage.getItem("favResponses") &&
-              JSON.parse(localStorage.getItem("favResponses")).includes(
-                response.id
-              )
-                ? "💔"
-                : "❤️"}
-            </button>
-          </div>
-        ))}
-      </div>
-      <div id="respPageNav">
-        <Link className="buttons" to="/">
-          Go Home
-        </Link>
-        <Link className="buttons" to="/hall-of-fame">
-          Hall of Fame
-        </Link>
-      </div>
+                  ? "💔"
+                  : "❤️"}
+              </button>
+            </div>
+          ))}
+        </div>
+      </Fade>
+      <Fade show={show}>
+        <div id="respPageNav">
+          <Link className="buttons" to="/">
+            Go Home
+          </Link>
+          <Link className="buttons" to="/hall-of-fame">
+            Hall of Fame
+          </Link>
+        </div>
+      </Fade>
     </div>
   );
 }
