@@ -3,9 +3,6 @@
   color: #fff9eb;
   font-family: "Alice", serif;
   min-width: 400px;
-  /* display: flex;
-  justify-content: space-between; */
-
 }
 
 .largeText {
@@ -58,7 +55,7 @@
 
 #formFields {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* width: 450px; */
 }
 
@@ -66,20 +63,20 @@
   border-radius: 10px;
   border-style: solid;
   border-color: #fff9eb;
-  border-width: 2px;
-  padding: 10px;
+  padding-top: 10px;
   transition: 0.5s;
+  margin: 5px;
 }
 
 .submitButton {
   border-radius: 10px;
   border-style: solid;
   border-color: #fff9eb;
-  border-width: 2px;
+  border-width: 1px;
   color: #fff9eb;
   background-color: #19197b;
   font-family: "Alice", serif;
-  padding: 10px;
+  max-height: 40px;
   transition: 0.5s;
 }
 
@@ -184,8 +181,6 @@
     margin: 50px auto;
   }
 }
-
-
 
 @keyframes fadeIn {
   0% {
