@@ -7,8 +7,10 @@ import prompts from "../prompts";
 function HallofFame(props) {
   const [monthSelection, setMonthSelection] = useState(0)
   const [topSelection, setTopSelection] = useState('')
-  const [toggleFetch, setToggleFetch] = useState(false);
+  // const [toggleFetch, setToggleFetch] = useState(false);
   const responses = props.responses 
+  const toggleFetch = props.toggle
+  const setToggleFetch = props.setToggle
 
   return (
     <div id='hallOfFameComp'>
