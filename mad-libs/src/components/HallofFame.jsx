@@ -6,11 +6,12 @@ import prompts from "../prompts";
 
 function HallofFame(props) {
   const [monthSelection, setMonthSelection] = useState(0)
-  const [topSelection, setTopSelection] = useState('')
+  // const [topSelection, setTopSelection] = useState('')
   // const [toggleFetch, setToggleFetch] = useState(false);
   const responses = props.responses 
   const toggleFetch = props.toggle
   const setToggleFetch = props.setToggle
+
 
   return (
     <div id='hallOfFameComp'>
@@ -23,13 +24,13 @@ function HallofFame(props) {
         toggleFetch={toggleFetch} />
       <h3>The prompt for this month was:</h3>
       <h3 className='largeText'>{prompts[monthSelection].text}</h3>
-      
       <TopSubmission
         monthSelection={monthSelection}
         responses={responses}
         toggleFetch={toggleFetch}
-        setTopSelection={setTopSelection}
-        topSelection={topSelection} />
+        // setTopSelection={setTopSelection}
+        // topSelection={topSelection}
+      />
       <Link className='buttons' to='/'>Go Home</Link>
     </div>
   )

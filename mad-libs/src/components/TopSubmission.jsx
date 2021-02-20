@@ -6,6 +6,7 @@ function TopSubmission(props) {
   const monthSelection = props.monthSelection
   const responses = props.responses
   const toggleFetch = props.toggleFetch
+  const [topResponse,setTopResponse] = useState('')
 
   useEffect(() => {
     //sorts by most likes
@@ -31,18 +32,21 @@ function TopSubmission(props) {
     //gets the most liked entry
     const topResponseIndex = monthlyResponses.length - 1
     const topArray = monthlyResponses[topResponseIndex]
-    const topResponse = topArray.fields.submission
+    // const topResponse = topArray.fields.submission
+    setTopResponse(topArray.fields.submission)
+    
+    // props.setTopSelection(topResponse)
 
-    props.setTopSelection(topResponse)
-
-    console.log(typeof(props.responses))
+    // console.log(typeof(props.responses))
 
   }, [toggleFetch]);
 
-  if (typeof(props.responses) !== 'undefined') {
+  
+  if (typeof(!props.responses)) {
     return (
       <div>
-        <h3 className='largeText'>{props.topSelection}</h3>
+        {/* <h3 className='largeText'>{props.topSelection}</h3> */}
+        <h3 className='largeText'>{topResponse}</h3>
       </div>
     )
   }
