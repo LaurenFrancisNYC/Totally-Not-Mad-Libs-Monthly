@@ -12,6 +12,7 @@ function MonthSelection(props) {
     props.setToggleFetch((curr) => !curr);
   }
 
+  // const monthsArray 
   return (
     <div id='monthSelection'>
       <form onSubmit={handleSubmit}>

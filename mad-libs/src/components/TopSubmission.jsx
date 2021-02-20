@@ -34,9 +34,12 @@ function TopSubmission(props) {
     const topResponse = topArray.fields.submission
 
     props.setTopSelection(topResponse)
+
+    console.log(typeof(props.responses))
+
   }, [toggleFetch]);
 
-  if (responses != null) {
+  if (typeof(props.responses) !== 'undefined') {
     return (
       <div>
         <h3 className='largeText'>{props.topSelection}</h3>
@@ -45,7 +48,7 @@ function TopSubmission(props) {
   }
   else {
     return (
-      <p>loading..</p>
+      <p>loading...</p>
     )
   }
 }
