@@ -3,7 +3,7 @@ import prompts from "./prompts";
 import Form from "./components/Form";
 import Responses from "./components/Responses";
 import HallofFame from "./components/HallofFame";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { baseURL, config } from "./services";

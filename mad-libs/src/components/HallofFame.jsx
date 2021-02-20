@@ -1,7 +1,7 @@
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MonthSelection from "../components/MonthSelection";
 import TopSubmission from "../components/TopSubmission";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import prompts from "../prompts";
 
 function HallofFame(props) {
