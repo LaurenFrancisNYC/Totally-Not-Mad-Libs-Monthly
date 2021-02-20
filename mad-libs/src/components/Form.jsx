@@ -7,16 +7,17 @@ import { useHistory } from "react-router-dom";
 function Form(props) {
   const [field1, setField1] = useState("");
   const [field2, setField2] = useState("");
-  const [likes, setLikes] = useState(0);
+  const [likes] = useState(0);
   const history = useHistory();
-  const toggle = props.toggle
-  const setToggle = props.setToggle
+  const toggle = props.toggle;
+  const setToggle = props.setToggle;
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
     //takes the 2 words the user submitted and concatenates them with the prompt, resulting in a string
-    const submission = props.currentPrompt.replace('____', `${field1}`).replace('____', `${field2}`)
+    const submission = props.currentPrompt
+      .replace("____", `${field1}`)
+      .replace("____", `${field2}`);
 
     //This creates the api post frields
     const fields = {
@@ -26,7 +27,6 @@ function Form(props) {
     };
     //post to the api
     await axios.post(baseURL, { fields }, config);
-    // console.log(fields)
     //returns to the homepage
     setToggle(!toggle);
     history.push("/");
@@ -36,9 +36,8 @@ function Form(props) {
     <div id="formComp">
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
       <h2>This month's prompt is as follows:</h2>
-      <h3 className='largeText'>{props.currentPrompt}</h3>
+      <h3 className="largeText">{props.currentPrompt}</h3>
       <form id="formFields" onSubmit={handleSubmit}>
-        {/* <label htmlFor="field1"></label> */}
         <input
           id="field1"
           className="textField"
@@ -46,7 +45,6 @@ function Form(props) {
           value={field1}
           onChange={(e) => setField1(e.target.value)}
         />
-        {/* <label htmlFor="field2"></label> */}
         <input
           id="field2"
           className="textField"
