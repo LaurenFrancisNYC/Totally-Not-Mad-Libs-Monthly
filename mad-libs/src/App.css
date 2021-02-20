@@ -59,7 +59,7 @@
 #formFields {
   display: flex;
   justify-content: space-evenly;
-  width: 450px;
+  /* width: 450px; */
 }
 
 .textField {
