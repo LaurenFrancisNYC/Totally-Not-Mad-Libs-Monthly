@@ -5,7 +5,9 @@ import { baseURL, config } from "../services";
 import prompts from "../prompts";
 
 function Responses(props) {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
+  const toggle = props.toggle
+  const setToggle = props.setToggle
 
   //opens local storage arrays
   useEffect(() => {
@@ -45,7 +47,7 @@ function Responses(props) {
 
   //makes sure only the current month's responses are shown
   const currentMonthResponses = props.responses.filter(function(response){
-    return response.fields.month == props.currentMonth})
+    return response.fields.month === props.currentMonth})
 
   // console.log(currentMonthResponses)
   return (

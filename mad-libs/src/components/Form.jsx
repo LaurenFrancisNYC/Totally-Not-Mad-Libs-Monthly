@@ -9,7 +9,10 @@ function Form(props) {
   const [field2, setField2] = useState("");
   const [likes, setLikes] = useState(0);
   const history = useHistory();
+  const toggle = props.toggle
+  const setToggle = props.setToggle
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     //takes the 2 words the user submitted and concatenates them with the prompt, resulting in a string
@@ -25,8 +28,10 @@ function Form(props) {
     await axios.post(baseURL, { fields }, config);
     // console.log(fields)
     //returns to the homepage
+    setToggle(!toggle);
     history.push("/");
   };
+
   return (
     <div id="formComp">
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>

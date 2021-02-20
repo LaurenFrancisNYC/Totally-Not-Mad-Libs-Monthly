@@ -15,7 +15,9 @@ function App() {
   const [currentMonth, setCurrentMonth] = useState(0);
   const [currentPrompt, setCurrentPrompt] = useState();
   const [responses, setResponses] = useState([])
-  
+  const [toggle, setToggle] = useState(false);
+
+
   // The primary api call 
   useEffect(() => {
   const getResponses = async () => {
@@ -23,7 +25,7 @@ function App() {
       setResponses(resp.data.records);
     };
     getResponses();
-  }, []);
+  }, [toggle]);
 
   // Gets the current date and sets it as the current month
   useEffect(() => {
@@ -41,16 +43,22 @@ function App() {
       <Route path='/submit'>
         <Form
           currentPrompt={currentPrompt} 
-          currentMonth={currentMonth} />
+          currentMonth={currentMonth}
+          toggle={toggle}
+          setToggle={setToggle}/>
       </Route>
       <Route path='/responses'>
         <Responses
           responses={responses}
-          currentMonth={currentMonth}/>
+          currentMonth={currentMonth}
+          toggle={toggle}
+          setToggle={setToggle}/>
       </Route>
       <Route path='/hall-of-fame'>
         <HallofFame
-          responses={responses}/>
+          responses={responses}
+          toggle={toggle}
+          setToggle={setToggle}/>
       </Route>
     </div>
   );

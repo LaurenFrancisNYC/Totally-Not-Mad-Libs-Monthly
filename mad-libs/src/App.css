@@ -145,17 +145,16 @@
   border-color: #fff9eb;
   border-width: 1px; */
   border: none;
+  font-size: 30px;
   justify-self: right;
   /* text-align: right; */
-
+  outline:none;
   /* text-decoration: none; */
   /* margin: 15px 15px 15px 15px; */
   transition: 0.5s;
 }
 
 .likeButtons:hover {
-  color: #19197b;
-  background-color: #fff9eb;
   transition: 0.5s;
 }
 
