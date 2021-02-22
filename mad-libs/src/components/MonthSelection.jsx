@@ -11,25 +11,9 @@ function MonthSelection(props) {
     props.setToggle((curr) => !curr);
   };
 
-  // const monthsArray = [
-  //   "January",
-  //   "February",
-  //   "March",
-  //   "April",
-  //   "May",
-  //   "June",
-  //   "July",
-  //   "August",
-  //   "September",
-  //   "October",
-  //   "November",
-  //   "December",
-  // ];
-
   return (
     <div id="monthSelection">
       <form onSubmit={handleSubmit}>
-        {/* <label>Month:</label> */}
         <select
           id="months"
           name="months"

@@ -11,9 +11,6 @@ function Prompt(props) {
     setShow((show) => !show);
   }, []);
 
-  // const [show2, setShow2] = useState(false);
-  // useEffect(() => { setShow2(show2 => !show2) }, [])
-
   return (
     <div id="monthlyPromptComp">
       <h2>Welcome to Totally Not Mad Libs Monthly</h2>
