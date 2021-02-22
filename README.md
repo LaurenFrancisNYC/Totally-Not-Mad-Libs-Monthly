@@ -59,20 +59,20 @@ Feb 21	|Presentations	|incomplete
 
 Component | Priority | Estimated Time | Time Invested | Actual Time
 ------------ | ------------- | ------------- | ------------- | -------------
-Proposal	|H	|3hrs	|0hrs	|0hrs
-Airtable setup	|H	|	1hrs	|0hrs	|0hrs
-Data population |H	|	3hrs|	0hrs	|0hrs
-Date gathering |H	|	 3hrs|	0hrs| 0hrs
-General JS writing |H|	 3hrs |0hrs |0hrs
-Form creation	|H	|	3hrs	|0hrs	|0hrs
-Like button creation |M|	 3hrs	|0hrs	|0hrs
-Hall of Fame page creation |M|		3hrs|	0hrs	|0hrs
-Links and Routes	|H	|3hrs|	0hrs	|0hrs
-Buttons |H|	 2hrs| 0hrs|	0hrs
-CSS general style |	H|5hrs |	0hrs	|0hrs
-CSS animations|L|	 2hrs| 0hrs|	0hrs
-Bug testing|L	 |2hrs |0hrs	|0hrs
-Total	||		36hrs|	0hrs|	0hrs
+Proposal	|H	|3hrs	|3hrs	|3hrs
+Airtable setup	|H	|	1hrs	|.5hrs	|.5hrs
+Data population |H	|	3hrs|	2hrs	|2hrs
+Date gathering |H	|	 3hrs|	3hrs| 3hrs
+General JS writing |H|	 3hrs |7hrs |7hrs
+Form creation	|H	|	3hrs	|4hrs	|4hrs
+Like button creation |M|	 3hrs	|4hrs	|4hrs
+Hall of Fame page creation |M|		3hrs|	6hrs	|6hrs
+Links and Routes	|H	|3hrs|	1hrs	|1hrs
+Buttons |H|	 2hrs| 2hrs|	2hrs
+CSS general style |	H|5hrs |	5hrs	|5hrs
+CSS animations|L|	 2hrs| 4hrs|	4hrs
+Bug testing|L	 |2hrs |1hrs	|1hrs
+Total	||		36hrs|	41.5hrs|	41.5 hrs
 
 
 # SWOT Analysis
