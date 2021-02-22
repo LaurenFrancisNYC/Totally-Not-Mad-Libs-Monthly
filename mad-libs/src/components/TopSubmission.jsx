@@ -1,21 +1,12 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
-import { baseURL, config } from "../services";
+import { useHistory } from "react-router-dom";
 
 function TopSubmission(props) {
   const monthSelection = props.monthSelection;
   const responses = props.responses;
   const toggle = props.toggle;
-  // const [responses, setResponses] = useState([]);
   const [topResponse, setTopResponse] = useState("");
-
-  // useEffect(() => {
-  //   const getResponses = async () => {
-  //     const resp = await axios.get(baseURL, config);
-  //     setResponses(resp.data.records);
-  //   };
-  //   getResponses();
-  // }, []);
+  const history = useHistory();
 
   useEffect(() => {
     //sorts by most likes
@@ -29,9 +20,7 @@ function TopSubmission(props) {
     //gets the most liked entry
     const topResponseIndex = monthlyResponses.length - 1;
     const topArray = monthlyResponses[topResponseIndex];
-    if (topArray !== "undefined") {
-      setTopResponse(topArray.fields.submission);
-    }
+    !topArray ? history.push("/") : setTopResponse(topArray.fields.submission);
   }, [toggle]);
 
   return (
