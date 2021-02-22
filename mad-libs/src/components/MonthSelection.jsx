@@ -48,7 +48,7 @@ function MonthSelection(props) {
           <option value="10">November</option>
           <option value="11">December</option>
         </select>
-        <input className="submitButton" id="monthSubmit" type="submit"></input>
+        <input id="monthSubmit" type="submit"></input>
       </form>
     </div>
   );

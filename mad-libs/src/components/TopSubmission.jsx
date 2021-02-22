@@ -29,7 +29,9 @@ function TopSubmission(props) {
     //gets the most liked entry
     const topResponseIndex = monthlyResponses.length - 1;
     const topArray = monthlyResponses[topResponseIndex];
-    setTopResponse(topArray.fields.submission);
+    if (topArray !== "undefined") {
+      setTopResponse(topArray.fields.submission);
+    }
   }, [toggle]);
 
   return (

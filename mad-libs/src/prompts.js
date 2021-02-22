@@ -9,43 +9,43 @@ const prompts = [
   },
   {
     month: 2,
-    text: "testing ____ and ____. 2",
+    text: "TBA",
   },
   {
     month: 3,
-    text: "testing ____ and ____. 3"
+    text: "TBA"
   },
   {
     month: 4,
-    text: "testing ____ and ____. 4"
+    text: "TBA"
   },
   {
     month: 5,
-    text: "testing ____ and ____. 5",
+    text: "TBA",
   },
   {
     month: 6,
-    text: "testing ____ and ____. 6"
+    text: "TBA"
   },
   {
     month: 7,
-    text: "testing ____ and ____. 7"
+    text: "TBA"
   },
   {
     month: 8,
-    text: "testing ____ and ____. 8",
+    text: "TBA",
   },
   {
     month: 9,
-    text: "testing ____ and ____. 9"
+    text: "TBA"
   },
   {
     month: 10,
-    text: "testing ____ and ____. 10"
+    text: "TBA"
   },
   {
     month: 11,
-    text: "testing ____ and ____. 11",
+    text: "TBA",
   },
 ];
 
