@@ -9,15 +9,15 @@ const prompts = [
   },
   {
     month: 2,
-    text: "TBA",
+    text: "You can't ____ here, this is ____ country.",
   },
   {
     month: 3,
-    text: "TBA"
+    text: "____! What is it good for? ____! "
   },
   {
     month: 4,
-    text: "TBA"
+    text: "5G is known to cause ____, not  ____!"
   },
   {
     month: 5,

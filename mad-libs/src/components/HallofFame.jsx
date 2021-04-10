@@ -19,7 +19,7 @@ function HallofFame(props) {
 
   return (
     <div id="hallOfFameComp">
-      <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+      <h2>Welcome to Totally Not Mad Libs Monthly: 2021 Edition</h2>
       <Fade show={show}>
         <h3>Select a month to see the most liked submission.</h3>
       </Fade>

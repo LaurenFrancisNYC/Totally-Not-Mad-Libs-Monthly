@@ -62,7 +62,7 @@ function Responses(props) {
 
   return (
     <div id="responsesComp">
-      <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+      <h2>Welcome to Totally Not Mad Libs Monthly: 2021 Edition</h2>
       <h2>This month's prompt is as follows:</h2>
       <h3 className="largeText">{prompts[props.currentMonth].text}</h3>
       <Fade show={show}>

@@ -13,7 +13,7 @@ function Prompt(props) {
 
   return (
     <div id="monthlyPromptComp">
-      <h2>Welcome to Totally Not Mad Libs Monthly</h2>
+      <h2>Welcome to Totally Not Mad Libs Monthly: 2021 Edition</h2>
       <h2>This month's prompt is as follows:</h2>
       <h3 className="largeText">{props.currentPrompt}</h3>
       <Fade show={show}>
