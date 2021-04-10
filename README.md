@@ -1,6 +1,5 @@
 # Deployment URL
-
-https://modest-jackson-dd9f76.netlify.app/
+monthly-mad-libs.surge.sh
 
 # Totally-Not-Mad-Libs-Monthly
 
